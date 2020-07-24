@@ -1,0 +1,161 @@
+h1 {
+    margin-bottom: 0;
+}
+
+/* 顶部 */
+.wrap {
+    max-width: 980px;
+    margin: auto;
+}
+
+/* 顶部左边logo */
+#logo {
+    color: #fff;
+    text-align: center;
+}
+
+/* 分割线 */
+.wrapDivider {
+    float: left;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+/* 顶部导航菜单 */
+.T_Nemu {
+    float: left;
+    line-height: 63px;
+    background-color: transparent;
+    border: none;
+}
+
+/* 内容左侧导航菜单 */
+.T_Nemu a {
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.T_Nemu a:hover {
+    color: skyblue !important;
+}
+
+.main .wrap {
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+}
+
+#MenuIndex li {
+    text-align: center;
+    margin-right: -1px;
+    /*解决因为加了右边框线鼠标滑过去的时候文字会移动*/
+    transition: none;
+    border-right: 3px solid rgba(0, 0, 0, 0);
+}
+
+#MenuIndex li:hover,
+#MenuIndex .ant-menu-item-selected {
+    background-color: #e6f7ff;
+    border-right-color: #1890ff;
+}
+
+/* 内容右侧的列表 */
+#IndexList {
+    border-left: 1px solid #ccc;
+}
+
+.pic {
+    padding-top: 15px;
+}
+
+.pic > .ant-list-item-meta-avatar {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.ant-pagination {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* 关于组件 */
+.ant-card-body img {
+    /* display: flex; */
+    width: 130px;
+}
+
+.about {
+    padding-top: 50px;
+}
+
+.ant-list-item {
+    padding-right: 10px;
+}
+
+/* 文章内容 */
+.main .wrap .userPic {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.ant-list-item-meta-avatar {
+    float: left;
+}
+
+/* 评论区 */
+.listItem {
+    display: block;
+    padding-left: 15px;
+}
+
+.listItem img {
+    width: 100%;
+}
+
+/* 用户列表 */
+.userInfo {
+    margin: 10px 10px;
+}
+
+.list-header {
+    border-right: none;
+    border-left: none;
+}
+
+.ant-list-header {
+    background-color: #f0f2f5;
+}
+
+.ant-list-item-meta {
+    padding-top: 10px;
+}
+
+
+/* 响应式布局 */
+@media all and (max-width: 767px) {
+    #MenuIndex ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapDivider{
+        display: none;
+    }
+    #logo h1{
+        text-align: left;
+    }
+
+    #MenuIndex li:hover,
+    #MenuIndex .ant-menu-item-selected{
+        background-color: #e6f7ff;
+        border-bottom-color: aquamarine;
+        border-right-color: transparent;
+    }
+    #MenuIndex li:hover{
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid skyblue;
+    }
+
+}
